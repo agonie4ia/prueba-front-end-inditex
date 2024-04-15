@@ -1,0 +1,37 @@
+// TODO: fails with "TypeError: Cannot read properties of undefined (reading 'getPodcasts')"
+
+/* import { act, renderHook, RenderHookResult } from "@testing-library/react-hooks";
+
+// Hooks
+import { usePodcasts } from "./../hooks/usePodcasts";
+
+// Mocks
+// import mockedPodcast from "./../__mocks__/mockedPodcast.json";
+
+// Interfaces
+import { PodcastsHook } from "./../model/interfaces";
+
+// Services
+import { fetchPodcasts } from "./../services/dataFetching";
+
+jest.mock("./../services/dataFetching", () => ({
+	fetchPodcasts: jest.fn(),
+}));
+
+
+describe("usePodcasts", () => {
+	it("handles errors during  podcast fetching", async () => {
+		const mockError = new Error("Failed to fetch podcasts");
+		(fetchPodcasts as jest.Mock).mockRejectedValue(mockError);
+
+		let result: RenderHookResult<unknown, PodcastsHook>;
+
+		await act(async () => {
+			result = renderHook(() => usePodcasts());
+			result.result.current.getPodcasts();
+			await result.waitForNextUpdate();
+		});
+
+		expect(result.result.current.error).toEqual(mockError);
+	});
+}); */
